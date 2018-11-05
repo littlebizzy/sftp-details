@@ -47,12 +47,12 @@ class Dashboard extends Helpers\Singleton {
 
 		// Prepare host
 		$host = $_SERVER['HTTP_HOST'];
-		if ('www.' == substr($host, 0, 4)) {
-			$host = substr($host, 5);
+		if ('www.' == strtolower(substr($host, 0, 4))) {
+			$host = substr($host, 4);
 		}
 
 		// Show host info
-		echo $host.'<br />'."\n";
+		echo esc_html($host).'<br />'."\n";
 
 		// Display sFTP info
 		foreach ($this->values as $name => $value) {
