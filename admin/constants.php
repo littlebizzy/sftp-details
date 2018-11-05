@@ -46,17 +46,43 @@ class Constants {
 			if (!empty($value)) {
 				$values[$title] = $value;
 
-			// Auto-compose root directory
-			} elseif ('root_dir' == $suffix) {
+			// Check if allow value composition
+			} elseif (false !== $value) {
 
-			// Auto-compose public directory
-			} elseif ('public_dir' == $suffix) {
+				// Auto-compose root directory
+				if ('root_dir' == $suffix) {
+					$values[$title] = $this->path(true);
 
+				// Auto-compose public directory
+				} elseif ('public_dir' == $suffix) {
+					$values[$title] = $this->path();
+				}
 			}
 		}
 
 		// Done
 		return $values;
+	}
+
+
+
+	/**
+	 * Retrieves root or public directory
+	 */
+	private function path($root = false) {
+
+		// Current path
+		static $path;
+		if (!isset($path)) {
+			$path = explode('/wp-content/', __FILE__);
+			$path = rtrim($path[0], '/');
+		}
+
+		// Check root
+		$dir = $root? dirname($path) : $path;
+
+		// Done
+		return $dir;
 	}
 
 
