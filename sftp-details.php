@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: sFTP Details
+Plugin Name: SFTP Details LittleBizzy
 Plugin URI: https://www.littlebizzy.com/plugins
-Description: sFTP Details
+Description: Displays a small Dashboard widget to remind logged-in Admin users of their server SFTP login information for easy reference (uses defined constants).
 Version: 1.0.0
 Author: LittleBizzy
 Author URI: https://www.littlebizzy.com
@@ -10,7 +10,8 @@ License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 PBP Version: 1.0.0
 WC requires at least: 3.3
-WC tested up to: 3.4
+WC tested up to: 3.5
+Prefix: SFTPDT
 */
 
 // Plugin namespace
