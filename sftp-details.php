@@ -34,7 +34,7 @@ const VERSION = '1.0.0';
 require_once dirname(FILE).'/helpers/loader.php';
 
 // Admin Notices
-Notices\Admin_Notices::instance(FILE);
+// Notices\Admin_Notices::instance(FILE);
 
 /**
  * Admin Notices Multisite check
