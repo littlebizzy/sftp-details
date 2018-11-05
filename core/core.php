@@ -9,7 +9,7 @@ use \LittleBizzy\SFTPDetails\Helpers;
 /**
  * Core class
  *
- * @package WordPress Plugin
+ * @package sFTP Details
  * @subpackage Core
  */
 final class Core extends Helpers\Singleton {
@@ -24,8 +24,26 @@ final class Core extends Helpers\Singleton {
 		// Factory object
 		$this->plugin->factory = new Factory($this->plugin);
 
-		// Attempt to run an object
-		//$this->plugin->factory->myObject()
+		// Check context to request the widget hook
+		if (is_admin() && !(defined('ADMIN_AJAX') && ADMIN_AJAX)) {
+			add_action('wp_dashboard_setup', [$this, 'dashboard']);
+		}
+	}
+
+
+
+	/**
+	 * Handle dashboard widget hook
+	 */
+	public function dashboard() {
+
+		// Check if the plugin is disabled
+		if (defined('SFTP_DETAILS') && !SFTP_DETAILS) {
+			return;
+		}
+
+		// Run the dashboard
+		$this->plugin->factory->dashboard();
 	}
 
 

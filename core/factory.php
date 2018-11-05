@@ -5,11 +5,12 @@ namespace LittleBizzy\SFTPDetails\Core;
 
 // Aliased namespaces
 use \LittleBizzy\SFTPDetails\Helpers;
+use \LittleBizzy\SFTPDetails\Admin;
 
 /**
  * Object Factory class
  *
- * @package WordPress Plugin
+ * @package sFTP Details
  * @subpackage Core
  */
 class Factory extends Helpers\Factory {
@@ -17,28 +18,19 @@ class Factory extends Helpers\Factory {
 
 
 	/**
-	 * A core object
+	 * Dashboard admin object instance
 	 */
-	protected function createCoreObject() {
-		return new MyCoreObject;
+	protected function createDashboard() {
+		return Admin\Dashboard::instance($this->plugin);
 	}
 
 
 
 	/**
-	 * A singleton object instance
+	 * Create SFTP values object
 	 */
-	protected function createOtherObject() {
-		return Subdirectory\TheClassName::instance($this->plugin);
-	}
-
-
-
-	/**
-	 * Create new object
-	 */
-	protected function createNewObject($args) {
-		return new Subdirectory\TheClassName($args);
+	protected function createConstants() {
+		return new Admin\Constants;
 	}
 
 
