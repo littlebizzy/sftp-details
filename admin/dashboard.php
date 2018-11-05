@@ -51,13 +51,19 @@ class Dashboard extends Helpers\Singleton {
 			$host = substr($host, 4);
 		}
 
-		// Show host info
-		echo esc_html($host).'<br />'."\n";
+		// Init
+		$html = '';
+
+		// Host info
+		$html .= esc_html($host).'<br />'."\n";
+
+		// Constants values
+		foreach ($this->values as $name => $value) {
+			$html .= '<strong>'.ucfirst(esc_html($name)).':</strong> '.esc_html($value).'<br />'."\n";
+		}
 
 		// Display sFTP info
-		foreach ($this->values as $name => $value) {
-			echo '<strong>'.ucfirst(esc_html($name)).':</strong> '.esc_html($value).'<br />'."\n";
-		}
+		echo '<p>'.$html.'</p>';
 	}
 
 
