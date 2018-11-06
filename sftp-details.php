@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: SFTP Details LittleBizzy
+Plugin Name: SFTP Details
 Plugin URI: https://www.littlebizzy.com/plugins/sftp-details
 Description: Displays a small Dashboard widget to remind logged-in Admin users of their server SFTP login information for easy reference (uses defined constants).
 Version: 1.0.0
