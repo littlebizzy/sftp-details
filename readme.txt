@@ -43,20 +43,26 @@ Any of our WordPress plugins may also be loaded as "Must-Use" plugins by using o
     define('DISABLE_NAG_NOTICES', true);
 
     /* SFTP Details Functions */
-    define
+    define('SFTP_DETAILS', true);
+    define('SFTP_DETAILS_SERVER', '123.123.123.123');
+    define('SFTP_DETAILS_USER', 'username');
+    define('SFTP_DETAILS_PASSWORD', 'password');
+    define('SFTP_DETAILS_PORT', '22');
+    define('SFTP_DETAILS_ROOT_DIR', true);
+    define('SFTP_DETAILS_PUBLIC_DIR', true);
 
 #### Technical Details ####
 
 * Parent Plugin: N/A
-* Disable Nag Notices: [Yes](https://codex.wordpress.org/Plugin_API/Action_Reference/admin_notices#Disable_Nag_Notices)
+* Disable Nag Notices: N/A
 * Settings Page: No
 * PHP Namespaces: Yes
 * Object-Oriented Code: Yes
 * Includes Media (images, icons, etc): No
 * Includes CSS: No
-* Database Storage: Yes
+* Database Storage: No
   * Transients: No
-  * WP Options Table: Yes
+  * WP Options Table: No
   * Other Tables: No
   * Creates New Tables: No
 * Database Queries: Backend Only (Options API)
