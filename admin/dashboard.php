@@ -35,7 +35,7 @@ class Dashboard extends Helpers\Singleton {
 		}
 
 		// Dashboard widget hook
-		wp_add_dashboard_widget($this->plugin->prefix.'_dashboard_widget', 'sFTP Details', [$this, 'widget']);
+		wp_add_dashboard_widget($this->plugin->prefix.'_dashboard_widget', 'SFTP Details', [$this, 'widget']);
 	}
 
 
