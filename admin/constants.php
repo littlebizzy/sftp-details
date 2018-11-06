@@ -22,7 +22,7 @@ class Constants {
 		'password' 		=> 'password',
 		'port' 			=> 'port',
 		'root_dir' 		=> 'root dir',
-		'public_dir' 	=> 'public dir',
+		'public_dir'		=> 'public dir',
 	];
 
 
