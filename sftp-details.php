@@ -3,7 +3,7 @@
 Plugin Name: SFTP Details
 Plugin URI: https://www.littlebizzy.com/plugins/sftp-details
 Description: Displays a small Dashboard widget to remind logged-in Admin users of their server SFTP login information for easy reference (uses defined constants).
-Version: 1.0.0
+Version: 1.0.1
 Author: LittleBizzy
 Author URI: https://www.littlebizzy.com
 License: GPLv3
@@ -28,7 +28,7 @@ if (!function_exists('add_action')) {
 // Plugin constants
 const FILE = __FILE__;
 const PREFIX = 'sftpdt';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 
 // Loader
 require_once dirname(FILE).'/helpers/loader.php';
