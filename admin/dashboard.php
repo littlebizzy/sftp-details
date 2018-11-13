@@ -55,7 +55,7 @@ class Dashboard extends Helpers\Singleton {
 		$html = '';
 
 		// Host info
-		$html .= esc_html($host).'<br />'."\n";
+		//// $html .= esc_html($host).'<br />'."\n";
 
 		// Constants values
 		foreach ($this->values as $name => $value) {
