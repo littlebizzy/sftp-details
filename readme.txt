@@ -7,7 +7,7 @@ Requires at least: 4.4
 Tested up to: 5.0
 Requires PHP: 7.2
 Multisite support: No
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Prefix: SFTPDT
@@ -109,6 +109,10 @@ There is no settings page. To enable/disable a certain function (sub-plugin) use
 Please avoid leaving negative reviews in order to get a feature implemented. Join our Facebook group instead.
 
 == Changelog ==
+
+= 1.0.1 =
+* changed widget title from sFTP to SFTP
+* commented out the `host` (domain) line for now
 
 = 1.0.0 =
 * initial release
