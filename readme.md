@@ -15,9 +15,9 @@ Displays a small Dashboard widget to remind logged-in Admin users of their serve
     define('SFTP_DETAILS_SERVER', '123.123.123.123');
     define('SFTP_DETAILS_USER', 'username');
     define('SFTP_DETAILS_PASSWORD', 'password');
-    define('SFTP_DETAILS_PORT', '22');
-    define('SFTP_DETAILS_ROOT_DIR', true);
-    define('SFTP_DETAILS_PUBLIC_DIR', true);
+    define('SFTP_DETAILS_PORT', '6969');
+    define('SFTP_DETAILS_ROOT_DIR', '/var/www');
+    define('SFTP_DETAILS_PUBLIC_DIR', '/var/www/html');
 
 ### Support Issues
 
