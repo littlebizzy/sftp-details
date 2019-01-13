@@ -56,6 +56,13 @@ class Constants {
 				// Auto-compose public directory
 				} elseif ('public_dir' == $suffix) {
 					$values[$title] = $this->path();
+
+				// Adds the current IP address
+				} elseif ('server' == $suffix) {
+					$ip = $this->ip();
+					if (!empty($ip)) {
+						$values[$title] = $ip;
+					}
 				}
 			}
 		}
@@ -83,6 +90,15 @@ class Constants {
 
 		// Done
 		return $dir;
+	}
+
+
+
+	/**
+	 * Return the current server IP address
+	 */
+	private function ip() {
+		return empty($_SERVER['SERVER_ADDR'])? (empty($_SERVER['LOCAL_ADDR'])? '' : $_SERVER['LOCAL_ADDR']) : $_SERVER['SERVER_ADDR'];
 	}
 
 
