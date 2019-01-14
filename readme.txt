@@ -110,6 +110,10 @@ Please avoid leaving negative reviews in order to get a feature implemented. Joi
 
 == Changelog ==
 
+= 1.0.2 =
+* changed server IP to automatic detection using SERVER_ADDR or fallback to LOCAL_ADDR
+* (but if constant is defined, it will still retain priority)
+
 = 1.0.1 =
 * changed widget title from sFTP to SFTP
 * commented out the `host` (domain) line for now
