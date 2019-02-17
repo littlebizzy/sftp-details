@@ -1,0 +1,16 @@
+{
+    "name": "littlebizzy/sftp-details",
+    "type": "wordpress-plugin",
+    "license": "GPLv3",
+    "homepage": "https://www.littlebizzy.com/plugins/sftp-details",
+    "description": "Displays a small Dashboard widget to remind logged-in Admin users of their server SFTP login information for easy reference (uses defined constants).",
+    "keywords": ["wordpress","plugin","sftp","ftp","widget","details","login","information","wp admin","dashboard"],
+    "support": {
+        "issues": "https://github.com/littlebizzy/sftp-details/issues",
+        "forum": "https://www.littlebizzy.com/members"
+    }
+    "require": {
+        "php": "^7.2",
+        "composer/installers": "~1.0"
+    }
+}
