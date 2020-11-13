@@ -110,6 +110,9 @@ Please avoid leaving negative reviews in order to get a feature implemented. Joi
 
 == Changelog ==
 
+= 2.0.0 =
+* TBD: forced widget to only display for admin-level users (security patch)
+
 = 1.0.2 =
 * changed server IP to automatic detection using SERVER_ADDR or fallback to LOCAL_ADDR
 * (but if constant is defined, it will still retain priority)
