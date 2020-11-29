@@ -1,4 +1,4 @@
-# SFTP Details
+# SFTP Details (DO NOT USE)
 
 Displays a small Dashboard widget to remind logged-in Admin users of their server SFTP login information for easy reference (uses defined constants).
 
