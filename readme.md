@@ -1,5 +1,7 @@
 # SFTP Details (DO NOT USE)
 
+# CODE IS NOT SECURE! DO NOT INSTALL!
+
 Displays a small Dashboard widget to remind logged-in Admin users of their server SFTP login information for easy reference (uses defined constants).
 
 * [Plugin Homepage (LittleBizzy.com)](https://www.littlebizzy.com/plugins/sftp-details)
